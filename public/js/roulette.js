@@ -90,7 +90,6 @@ if (width > 1000) {
     if (current != 11) {
       deg -= 30;
 
-      console.log(current);
       current++;
     } else {
       deg = 270;
@@ -117,7 +116,6 @@ if (width > 1000) {
     if (current != 11) {
       deg -= 30;
 
-      console.log(current);
       current++;
     } else {
       deg = 0;
