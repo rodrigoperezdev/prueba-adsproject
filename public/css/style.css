@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
   font-family: "BeVietnamPro-Variable", sans-serif;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   background-color: #191919;
@@ -31,7 +31,7 @@ strong {
 }
 
 section {
-  height: calc(100vh - 17px);
+  min-height: calc(100vh - 17px);
 }
 
 img {
@@ -60,10 +60,37 @@ section {
 .front-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-image: url("../img/pexels-pixabay-50570.jpg");
   background-size: cover;
+}
+.front-page__logos {
+  display: flex;
+  flex-direction: column;
+  width: min(500px, 90%);
+  -webkit-backdrop-filter: brightness(0.8) blur(6px);
+          backdrop-filter: brightness(0.8) blur(6px);
+  border-radius: 16px;
+  padding: 1em;
+}
+.front-page__logos-estrellas {
+  width: min(300px, 80%);
+  margin: auto;
+}
+.front-page__logos-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.front-page__logos-logos img:nth-child(1) {
+  width: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.front-page__logos-logos img:nth-child(2) {
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .front-page__text {
   text-align: center;
@@ -86,6 +113,10 @@ section {
 }
 .front-page__arrow-down img {
   width: 32px;
+}
+.front-page__footer-ruleta {
+  position: relative;
+  bottom: -6px;
 }
 
 @keyframes salto {
@@ -113,7 +144,8 @@ section {
 }
 .roulette-info__text {
   color: #fff;
-  padding: 3em 3em 3em 2em;
+  padding: 3em 1em 3em 1em;
+  margin-left: 1em;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(4px) brightness(80%);
           backdrop-filter: blur(4px) brightness(80%);
@@ -121,7 +153,7 @@ section {
   display: inline-block;
   text-align: start;
   margin: auto;
-  max-width: 290px;
+  max-width: 500px;
   transform: translateX(10px);
 }
 
@@ -171,7 +203,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -192,7 +224,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -213,7 +245,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -234,7 +266,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -255,7 +287,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -276,7 +308,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -297,7 +329,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -318,7 +350,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -339,7 +371,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -360,7 +392,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -381,7 +413,7 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
 }
@@ -402,9 +434,32 @@ section {
   left: 185px;
   transform: rotate(59deg);
   top: 96px;
-  font-size: 14px;
+  font-size: 12px;
   transform-origin: top;
   font-weight: 300;
+}
+.roulette .roulette__inner-element:nth-child(11) span {
+  position: absolute;
+  left: 154px;
+  transform: rotate(59deg);
+  top: 120px;
+  font-size: 12px;
+  transform-origin: top;
+  font-weight: 300;
+}
+.roulette .roulette__inner-element:nth-child(12) span {
+  position: absolute;
+  left: 165px;
+  transform: rotate(59deg);
+  top: 118px;
+  font-size: 12px;
+  transform-origin: top;
+  font-weight: 300;
+}
+.roulette__footer {
+  position: absolute;
+  bottom: -6px;
+  left: calc(50% - 352px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -414,12 +469,14 @@ section {
     overflow: hidden;
   }
   .roulette-info__text {
-    margin-block: 2em;
+    margin-block: 6em;
+    margin-inline: 1em;
   }
   .roulette {
     margin: auto;
     left: 0;
     transform: rotate(0deg);
+    margin-bottom: 6em;
   }
   .roulette__container {
     width: 500px;
@@ -628,5 +685,27 @@ section {
     left: 128px;
     top: 88px;
     transform-origin: top;
+  }
+  .roulette__footer {
+    width: 300px;
+    left: calc(50% - 140px);
+  }
+  .roulette .roulette__inner-element:nth-child(11) span {
+    position: absolute;
+    left: 111px;
+    transform: rotate(59deg);
+    top: 100px;
+    font-size: 12px;
+    transform-origin: top;
+    font-weight: 300;
+  }
+  .roulette .roulette__inner-element:nth-child(12) span {
+    position: absolute;
+    left: 107px;
+    transform: rotate(59deg);
+    top: 93px;
+    font-size: 12px;
+    transform-origin: top;
+    font-weight: 300;
   }
 }/*# sourceMappingURL=style.css.map */

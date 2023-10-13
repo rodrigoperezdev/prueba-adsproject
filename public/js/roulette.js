@@ -2,73 +2,73 @@ const services = [
   {
     title: "Gira la ruleta",
     description: "Y conoce todos nuestros servicios",
-    img: "../img/fondo-ruleta.jpg",
+    img: "./img/fondo-ruleta.jpg",
   },
   {
     title: "Ceguera",
     description:
       "Anualmente entregamos libros de texto gratuitos impresos en sistema Braille para estudiantes ciegos y sordociegos, inscritos en primaria, secundaria y/o telesecundarias públicas en los 46 municipios. ",
-    img: "../img/ceguera.jpg",
+    img: "./img/ceguera.jpg",
   },
   {
     title: "Baja visión profunda",
     description:
       "Asignamos libros de texto gratuitos impresos en formato macrotipo para estudiantes con baja visión profunda, inscritos en primaria, secundaria y/o telesecundarias públicas en los 46 municipios.",
-    img: "../img/vision.jpg",
+    img: "./img/vision.jpg",
   },
   {
     title: "Hipoacusia",
     description:
       "En Guanajuato impulsamos el derecho a la lengua materna, desde el modelo bilingüe bicultural, en el aprendizaje de la Lengua de Señas Mexicana y el Español para la población escolar con hipoacusia. ",
-    img: "../img/hipoacusia.jpg",
+    img: "./img/hipoacusia.jpg",
   },
   {
     title: "Sordera",
     description:
       "En Guanajuato impulsamos el derecho a la lengua materna, desde el aprendizaje de la Lengua de Señas Mexicana.  ",
-    img: "../img/sordera.jpg",
+    img: "./img/sordera.jpg",
   },
   {
     title: "Discapacidad intelectual",
     description:
       "Promovemos el desarrollo de habilidades para la vida y el aprendizaje autónomo y la adquisición de aprendizajes formales de niñas, niños y adolescentes con discapacidad intelectual.",
-    img: "../img/intelectual.jpg",
+    img: "./img/intelectual.jpg",
   },
   {
     title: "Discapacidad motriz",
     description:
       "El 50% de nuestras escuelas de educación básica cuentan con condiciones mínimas arquitectónicas de accesibilidad. ",
-    img: "../img/motriz.jpg",
+    img: "./img/motriz.jpg",
   },
   {
     title: "Trastorno de la comunicación",
     description:
       "Guanajuato posiciona el 1er. protocolo de atención educativa al Trastorno del Espectro Autista en la educación básica, único en su tipo.  ",
-    img: "../img/comunicacion.jpg",
+    img: "./img/comunicacion.jpg",
   },
   {
     title: "Discapacidad psicosocial",
     description:
       "Situamos un protocolo de atención educativa a la discapacidad psicosocial para la educación básica, único en su tipo. ",
-    img: "../img/social.jpg",
+    img: "./img/social.jpg",
   },
   {
     title: "Aptitudes sobresalientes",
     description:
       "En Guanajuato trabajamos por el desarrollo de las aptitudes sobresalientes y los talentos de niñas, niños y adolescentes. ",
-    img: "../img/sobresaliente.jpg",
+    img: "./img/sobresaliente.jpg",
   },
   {
     title: "Trastorno del espectro autista (TEA)",
     description:
       "Guanajuato posiciona el 1er. protocolo de atención educativa al Trastorno del Espectro Autista en la educación básica, único en su tipo. ",
-    img: "../img/autismo.jpg",
+    img: "./img/autismo.jpg",
   },
   {
     title: "Trastorno por déficit de atención e hiperactividad (TDAH)",
     description:
       "Guanajuato consolida la prestación del servicio educativo de la educación especial para niñas, niños y adolescentes con TDAH en los 46 municipios. ",
-    img: "../img/tdah.jpg",
+    img: "./img/tdah.jpg",
   },
 ];
 
