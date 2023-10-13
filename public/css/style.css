@@ -67,7 +67,7 @@ section {
 }
 .front-page__text {
   text-align: center;
-  width: min(768px, 90%);
+  width: min(800px, 90%);
   color: white;
   -webkit-backdrop-filter: blur(14px);
           backdrop-filter: blur(14px);
@@ -109,6 +109,7 @@ section {
   background-size: cover;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .roulette-info__text {
   color: #fff;
