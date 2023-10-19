@@ -31,7 +31,12 @@ strong {
 }
 
 section {
-  min-height: calc(100vh - 17px);
+  min-height: calc(100vh);
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -41,12 +46,16 @@ img {
 
 p {
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.3;
 }
 
 section {
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .btn {
@@ -60,39 +69,10 @@ section {
 .front-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-image: url("../img/pexels-pixabay-50570.jpg");
   background-size: cover;
-
-  &__logos {
-    display: flex;
-    flex-direction: column;
-    width: min(500px, 90%);
-    backdrop-filter: brightness(0.8) blur(6px);
-    border-radius: 16px;
-    padding: 1em;
-
-    &-estrellas {
-      width: min(300px, 80%);
-      margin: auto;
-    }
-
-    &-logos {
-      display: flex;
-      justify-content: space-around;
-
-      & img:nth-child(1) {
-        width: 25%;
-        object-fit: contain;
-      }
-
-      & img:nth-child(2) {
-        width: 60%;
-        object-fit: contain;
-      }
-    }
-  }
 
   &__text {
     text-align: center;
@@ -119,7 +99,7 @@ section {
   }
 
   &__footer-ruleta {
-    position: relative;
+    position: absolute;
     bottom: -6px;
   }
 }
@@ -180,14 +160,59 @@ section {
     margin: auto;
   }
 
-  &__inner-element:nth-child(odd) {
-    background-color: #f6f6f671;
+  &__inner-element {
     backdrop-filter: blur(14px);
+  }
+
+  &__inner-element:nth-child(1) {
+    background-color: #f6f6f671;
     color: #191919;
   }
-  &__inner-element:nth-child(even) {
+  &__inner-element:nth-child(2) {
     background-color: #aa150a5c;
-    backdrop-filter: blur(14px);
+    color: #f9f9f9;
+  }
+
+  &__inner-element:nth-child(3) {
+    background-color: #0aa5aa5c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(4) {
+    background-color: #17aa0a5c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(5) {
+    background-color: #f4ba0d5c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(6) {
+    background-color: #e50cda5c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(7) {
+    background-color: #200ae25c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(8) {
+    background-color: #ff00005c;
+
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(9) {
+    background-color: #7009f65c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(10) {
+    background-color: #d9e40a5c;
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(11) {
+    background-color: #08f1945c;
+
+    color: #f9f9f9;
+  }
+  &__inner-element:nth-child(12) {
+    background-color: #4516ff5c;
     color: #f9f9f9;
   }
 
@@ -307,5 +332,30 @@ section {
     font-size: 12px;
     transform-origin: top;
     font-weight: 300;
+  }
+}
+
+.information {
+  background-image: url("../img/fondo-ruleta.jpg");
+  background-size: cover;
+  &__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+      width: min(700px, 90%);
+      display: inline;
+      backdrop-filter: blur(20px) brightness(60%);
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0px 0px 25px 2px rgba(255, 255, 255, 0);
+    }
+    & h2,
+    p {
+      color: #ffffff;
+      white-space: pre-line;
+    }
   }
 }
