@@ -709,8 +709,8 @@ button {
     transform-origin: top;
   }
   .roulette__footer {
-    width: 300px;
-    left: calc(50% - 140px);
+    width: 390px;
+    left: calc(50% - 195px);
   }
   .roulette .roulette__inner-element:nth-child(11) span {
     position: absolute;
@@ -734,12 +734,26 @@ button {
 .information {
   background-image: url("../img/fondo-ruleta.jpg");
   background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+}
+.information::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5); /* Color blanco semitransparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .information__container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 211;
+  position: relative;
 }
 .information__container div {
   width: min(700px, 90%);
@@ -754,4 +768,21 @@ button {
 .information__container p {
   color: #ffffff;
   white-space: pre-line;
+}
+.information__footer {
+  position: absolute;
+  bottom: -4px;
+  left: calc(50% - 352px);
+  width: 698px;
+  z-index: 342432;
+}
+
+@media screen and (max-width: 1000px) {
+  .information__container div {
+    margin-block: 3em 5em;
+  }
+  .information__footer {
+    width: 390px;
+    left: calc(50% - 195px);
+  }
 }/*# sourceMappingURL=style.css.map */
