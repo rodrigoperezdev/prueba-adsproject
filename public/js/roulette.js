@@ -1,4 +1,4 @@
-//Se guardan los servicios que ofrecen en este arreglo de objetos
+//Se guardan los servicios que ofrecen en este arreglo de objetos y el angulo que debe llevar en la ruleta en deg y para responsive en respDeg
 const services = [
   {
     title: "Gira la ruleta",
@@ -7,6 +7,8 @@ const services = [
     descubre todo a cerca de las condiciones de discapacidad y la
     atención educativa que se ofrece a cada población.`,
     img: "./img/fondo-ruleta.jpg",
+    deg: 270,
+    respDeg: 0,
   },
   {
     title: "Ceguera",
@@ -20,6 +22,8 @@ const services = [
     Algunos de los materiales educativos más frecuentes a utilizar son: regleta y punzón para lectura y escritura, permite escribir en sistema Braille; ábaco, sirve para realizar operaciones matemáticas, literatura infantil y libros de texto impresos en sistema Braille, caja aritmética, números formas y figuras en alto y bajo relieve, tabla para trazo o geoplano; pintar, rayar y subrayar con crayola, una medida económica de alto relieve, bastón blanco para desplazamiento y movilidad y audiocuentos. 
     `,
     img: "./img/ceguera.jpg",
+    deg: 240,
+    respDeg: -30,
   },
   {
     title: "Baja visión profunda",
@@ -31,6 +35,8 @@ const services = [
       Los materiales educativos para crear ambientes favorables de aprendizaje pertinentes son: plumones y lápices  de gran grosor, cuadernos con líneas más remarcadas, iluminación adecuada, utilizar una lámpara, micas de colores, atriles que mejoran la postura durante la lectura y escritura, plantillas de escritura, láminas de cartón cortadas por los renglones que ayudan a marcar táctilmente el espacio de escritura, ayudas ópticas como lupas, lentes especiales con prismas o telescopios individuales, textos, señalizaciones, dibujos en alto contraste, textos impresos en formato macrotipo. 
       `,
     img: "./img/vision.jpg",
+    deg: 210,
+    respDeg: -60,
   },
   {
     title: "Hipoacusia",
@@ -45,6 +51,8 @@ const services = [
       Se recomienda utilizar materiales concretos, tarjetas con ilustraciones, fotografías, material didáctico lúdico, pictogramas, materiales audiovisuales, uso de Sistemas Aumentativos y Alternativos de Comunicación, SAAC, o uso de organizadores gráficos.
       `,
     img: "./img/hipoacusia.jpg",
+    deg: 180,
+    respDeg: -90,
   },
   {
     title: "Sordera",
@@ -65,6 +73,8 @@ const services = [
       Las imágenes, pictogramas, fotografías, videos, libros ilustrados, recursos para el aprendizaje que incorporan tecnología asistiva, objetos concretos, láminas, son recursos del aula y la escuela para la enseñanza y el aprendizaje de estudiantes sordos.
       `,
     img: "./img/sordera.jpg",
+    deg: 150,
+    respDeg: -120,
   },
   {
     title: "Discapacidad intelectual",
@@ -76,6 +86,8 @@ const services = [
       En cuanto a los materiales educativos se recomienda para estos estudiantes los soportes visuales, materiales manipulativos y de la vida cotidiana (periódico, revistas, envases), adicionalmente para trabajar la lectura, escritura y matemáticas (alfabetos móviles, ábacos, material base 10, dominó, regletas y bloques).
       `,
     img: "./img/intelectual.jpg",
+    deg: 120,
+    respDeg: -150,
   },
   {
     title: "Discapacidad motriz",
@@ -86,6 +98,8 @@ const services = [
     Por ende, el trabajo con las familias va encaminado a informar sobre las características propias de la discapacidad motriz, la canalización con especialistas según sea la afectación que presenta, además de mantener una comunicación asertiva, asesorándolos sobre los materiales educativos o métodos que garanticen su acceso a la lectura, escritura y matemáticas.  \n
     En cuanto a los materiales educativos específicos y/o adaptados para conseguir la autonomía de los estudiantes, se encuentran los atriles para la verticalización, señalizadores o punteros, lápices y rotuladores gruesos o con adaptaciones, sistemas de plantillas para letras y dibujos, materiales complementarios para tareas escolares en función de sus necesidades de movimiento; así como soporte informático para facilitar las tareas escolares.
     `,
+    deg: 90,
+    respDeg: -180,
   },
   {
     title: "Trastorno de la comunicación",
@@ -96,6 +110,8 @@ const services = [
       Por consiguiente, una de las acciones a trabajar con las familias y tutores de las y los estudiantes, es realizar un plan de trabajo para informar y orientar sobre los apoyos, recursos comunicativos/ lingüísticos que se requieren y dar el seguimiento correspondiente. 
       `,
     img: "./img/comunicacion.jpg",
+    deg: 60,
+    respDeg: -210,
   },
   {
     title: "Discapacidad psicosocial",
@@ -107,6 +123,8 @@ const services = [
     Las acciones para trabajar con las familias o tutores están encaminadas a brindarles un ambiente que permita acompañar y aceptar la situación real de niñas, niños y adolescentes; establecer redes de apoyo en el aula, la escuela y la familia, además de otorgar de cerca el acompañamiento y la atención de profesionales de la salud y la psicología.
      
     `,
+    deg: 30,
+    respDeg: -240,
   },
   {
     title: "Aptitudes sobresalientes",
@@ -121,6 +139,8 @@ const services = [
       Los materiales educativos que las y los docentes utilizan para atender a las y los estudiantes que presentan aptitudes sobresaliente es variado, aquí encontramos el tanto el didáctico, aquellos que se diseñan para el trabajo de programas y proyectos escolares, así como el especializado, por situar ejemplo, las estaciones de trabajo STEAM LEGO para preescolar, primaria y secundaria, el uso de pruebas psicométricas, material bibliográfico especializado en las ciencias, la ciudadanía, la creatividad, el arte, las matemáticas, la robótica, la ingeniería y programación para niñas, niños y adolescentes, entre otros. 
       `,
     img: "./img/sobresaliente.jpg",
+    deg: 0,
+    respDeg: -270,
   },
   {
     title: "Trastorno del espectro autista (TEA)",
@@ -137,6 +157,8 @@ const services = [
       
       `,
     img: "./img/autismo.jpg",
+    deg: 330,
+    respDeg: -300,
   },
   {
     title: "Trastorno por déficit de atención e hiperactividad (TDAH)",
@@ -148,6 +170,8 @@ const services = [
       Por otro lado, en el aula utilizamos libros sensoriales, técnicas de autorregulación y manejo de conducta, organizadores gráficos, juegos diversificados que favorezcan la atención; materiales que les permiten el movimiento como los asientos flexibles, sillas movibles, escritorios para trabajar de pie. 
       `,
     img: "./img/tdah.jpg",
+    deg: 300,
+    respDeg: -330,
   },
 ];
 
@@ -163,12 +187,267 @@ const infoBg = document.querySelector(".information");
 const infoH2 = document.querySelector(".information__h2");
 const infoP = document.querySelector(".information__p");
 
+//Botones trastornos
+const btnCeguera = document.querySelector(".btn-ceguera");
+const btnVision = document.querySelector(".btn-vision");
+const btnHipoacusia = document.querySelector(".btn-hipoacusia");
+const btnSordera = document.querySelector(".btn-sordera");
+const btnIntelectual = document.querySelector(".btn-intelectual");
+const btnMotriz = document.querySelector(".btn-motriz");
+const btnComunicacion = document.querySelector(".btn-comunicacion");
+const btnPsicosocial = document.querySelector(".btn-psicosocial");
+const btnSobresalientes = document.querySelector(".btn-sobresalientes");
+const btnTea = document.querySelector(".btn-tea");
+const btnTdha = document.querySelector(".btn-tdah");
+
 //TODO: refactorizar logica de los if de abajo
 
 //Responsive
 if (width > 1000) {
   let deg = 270,
     current = 0;
+
+  btnCeguera.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[1].deg;
+
+    current = 1;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[1].title;
+    text.textContent = services[1].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[1].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[1].title;
+    infoP.textContent = services[1].description;
+    infoBg.style.backgroundImage = `url(${services[1].img})`;
+  });
+
+  btnVision.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[2].deg;
+
+    current = 2;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[2].title;
+    text.textContent = services[2].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[2].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[2].title;
+    infoP.textContent = services[2].description;
+    infoBg.style.backgroundImage = `url(${services[2].img})`;
+  });
+
+  btnHipoacusia.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[3].deg;
+
+    current = 3;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[3].title;
+    text.textContent = services[3].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[2].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[3].title;
+    infoP.textContent = services[3].description;
+    infoBg.style.backgroundImage = `url(${services[3].img})`;
+  });
+
+  btnSordera.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[4].deg;
+
+    current = 4;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[4].title;
+    text.textContent = services[4].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[4].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[4].title;
+    infoP.textContent = services[4].description;
+    infoBg.style.backgroundImage = `url(${services[4].img})`;
+  });
+
+  btnIntelectual.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[5].deg;
+
+    current = 5;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[5].title;
+    text.textContent = services[5].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[5].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[5].title;
+    infoP.textContent = services[5].description;
+    infoBg.style.backgroundImage = `url(${services[5].img})`;
+  });
+
+  btnMotriz.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[6].deg;
+
+    current = 6;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[6].title;
+    text.textContent = services[6].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[6].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[6].title;
+    infoP.textContent = services[6].description;
+    infoBg.style.backgroundImage = `url(${services[6].img})`;
+  });
+
+  btnComunicacion.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[7].deg;
+
+    current = 7;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[7].title;
+    text.textContent = services[7].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[7].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[7].title;
+    infoP.textContent = services[7].description;
+    infoBg.style.backgroundImage = `url(${services[7].img})`;
+  });
+
+  btnPsicosocial.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[8].deg;
+
+    current = 8;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[8].title;
+    text.textContent = services[8].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[8].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[8].title;
+    infoP.textContent = services[8].description;
+    infoBg.style.backgroundImage = `url(${services[8].img})`;
+  });
+
+  btnSobresalientes.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[9].deg;
+
+    current = 9;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[9].title;
+    text.textContent = services[9].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[9].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[9].title;
+    infoP.textContent = services[9].description;
+    infoBg.style.backgroundImage = `url(${services[9].img})`;
+  });
+
+  btnTea.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[10].deg;
+
+    current = 10;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[10].title;
+    text.textContent = services[10].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[10].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[10].title;
+    infoP.textContent = services[10].description;
+    infoBg.style.backgroundImage = `url(${services[10].img})`;
+  });
+
+  btnTdha.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[11].deg;
+
+    current = 11;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[11].title;
+    text.textContent = services[11].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[11].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[11].title;
+    infoP.textContent = services[11].description;
+    infoBg.style.backgroundImage = `url(${services[11].img})`;
+  });
 
   button.addEventListener("click", () => {
     textContainer.style.transform = "translateX(-10px)";
@@ -199,6 +478,248 @@ if (width > 1000) {
 } else {
   let deg = 0,
     current = 0;
+
+  btnCeguera.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[1].respDeg;
+
+    current = 1;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[1].title;
+    text.textContent = services[1].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[1].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[1].title;
+    infoP.textContent = services[1].description;
+    infoBg.style.backgroundImage = `url(${services[1].img})`;
+  });
+
+  btnVision.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[2].respDeg;
+
+    current = 2;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[2].title;
+    text.textContent = services[2].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[2].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[2].title;
+    infoP.textContent = services[2].description;
+    infoBg.style.backgroundImage = `url(${services[2].img})`;
+  });
+
+  btnHipoacusia.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[3].respDeg;
+
+    current = 3;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[3].title;
+    text.textContent = services[3].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[2].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[3].title;
+    infoP.textContent = services[3].description;
+    infoBg.style.backgroundImage = `url(${services[3].img})`;
+  });
+
+  btnSordera.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[4].respDeg;
+
+    current = 4;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[4].title;
+    text.textContent = services[4].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[4].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[4].title;
+    infoP.textContent = services[4].description;
+    infoBg.style.backgroundImage = `url(${services[4].img})`;
+  });
+
+  btnIntelectual.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[5].respDeg;
+
+    current = 5;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[5].title;
+    text.textContent = services[5].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[5].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[5].title;
+    infoP.textContent = services[5].description;
+    infoBg.style.backgroundImage = `url(${services[5].img})`;
+  });
+
+  btnMotriz.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[6].respDeg;
+
+    current = 6;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[6].title;
+    text.textContent = services[6].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[6].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[6].title;
+    infoP.textContent = services[6].description;
+    infoBg.style.backgroundImage = `url(${services[6].img})`;
+  });
+
+  btnComunicacion.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[7].respDeg;
+
+    current = 7;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[7].title;
+    text.textContent = services[7].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[7].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[7].title;
+    infoP.textContent = services[7].description;
+    infoBg.style.backgroundImage = `url(${services[7].img})`;
+  });
+
+  btnPsicosocial.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[8].respDeg;
+
+    current = 8;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[8].title;
+    text.textContent = services[8].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[8].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[8].title;
+    infoP.textContent = services[8].description;
+    infoBg.style.backgroundImage = `url(${services[8].img})`;
+  });
+
+  btnSobresalientes.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[9].respDeg;
+
+    current = 9;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[9].title;
+    text.textContent = services[9].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[9].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[9].title;
+    infoP.textContent = services[9].description;
+    infoBg.style.backgroundImage = `url(${services[9].img})`;
+  });
+
+  btnTea.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[10].respDeg;
+
+    current = 10;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[10].title;
+    text.textContent = services[10].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[10].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[10].title;
+    infoP.textContent = services[10].description;
+    infoBg.style.backgroundImage = `url(${services[10].img})`;
+  });
+
+  btnTdha.addEventListener("click", () => {
+    textContainer.style.transform = "translateX(-10px)";
+
+    deg = services[11].respDeg;
+
+    current = 11;
+
+    roulette.style.transform = `rotate(${deg}deg)`;
+
+    title.textContent = services[11].title;
+    text.textContent = services[11].shortDescription;
+    rouletteBg.style.backgroundImage = `url(${services[11].img})`;
+
+    setTimeout(() => {
+      textContainer.style.transform = "translateX(0px)";
+    }, 500);
+
+    infoH2.textContent = services[11].title;
+    infoP.textContent = services[11].description;
+    infoBg.style.backgroundImage = `url(${services[11].img})`;
+  });
 
   button.addEventListener("click", () => {
     textContainer.style.transform = "translateX(-10px)";

@@ -64,6 +64,10 @@ button {
   color: #eeeeee;
   padding: 0.6em 1.3em;
   border-radius: 4px;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #424242;
 }
 
 .front-page {
@@ -124,6 +128,14 @@ button {
   align-items: center;
   overflow: hidden;
 }
+.roulette-info #roulette-indicator {
+  position: absolute;
+  bottom: 54vh;
+  right: 305px;
+  width: 44px;
+  z-index: 323324;
+  transform: rotate(90deg);
+}
 .roulette-info__text {
   color: #fff;
   padding: 3em 1em 3em 1em;
@@ -138,7 +150,27 @@ button {
   max-width: 500px;
   transform: translateX(10px);
 }
+.roulette-info__buttons {
+  margin-top: 1em;
+}
+.roulette-info__buttons button {
+  margin-block: 0.5em;
+  margin-right: 0.2em;
+}
 
+@media screen and (max-width: 1000px) {
+  .roulette-info #roulette-indicator {
+    bottom: 573px;
+    right: calc(50% - 20px);
+    width: 40px;
+    transform: rotate(180deg);
+  }
+}
+@media screen and (max-width: 521px) {
+  .roulette-info #roulette-indicator {
+    left: 240px;
+  }
+}
 .roulette {
   left: 380px;
   position: relative;
@@ -735,7 +767,7 @@ button {
   background-image: url("../img/fondo-ruleta.jpg");
   background-size: cover;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .information::after {
   content: "";
