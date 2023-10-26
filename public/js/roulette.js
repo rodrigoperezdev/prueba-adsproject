@@ -176,9 +176,9 @@ const services = [
 ];
 
 //Datos
-const button = document.querySelector(".btn");
+const button = document.querySelector(".btn-girar");
 const roulette = document.querySelector(".roulette");
-const rouletteBg = document.querySelector(".roulette-info");
+const rouletteBg = document.querySelector(".info");
 const textContainer = document.querySelector(".roulette-info__text");
 const title = document.querySelector(".roulette-info__h2");
 const text = document.querySelector(".roulette-info__p");
@@ -200,7 +200,7 @@ const btnSobresalientes = document.querySelector(".btn-sobresalientes");
 const btnTea = document.querySelector(".btn-tea");
 const btnTdha = document.querySelector(".btn-tdah");
 
-//TODO: refactorizar logica de los if de abajo
+//TODO: refactorizar todo el codigo
 
 //Responsive
 if (width > 1000) {
@@ -451,7 +451,7 @@ if (width > 1000) {
 
   button.addEventListener("click", () => {
     textContainer.style.transform = "translateX(-10px)";
-
+    console.log("hola");
     if (current != 11) {
       deg -= 30;
 
